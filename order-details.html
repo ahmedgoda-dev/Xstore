@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>order_details</title>
+    <link rel="stylesheet" href="./static/css/order_details_page.css" />
+    <link rel="stylesheet" href="./static/css/global.css" />
+    <script type="module" src="./static/js/utils/loadLayout.js"></script>
+    <script type="module" src="./static/js/orderDetails.js"></script>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="container">
+      <div id="warpper">
+        <div class="main_line">
+          <div class="left_paragraph">
+            Order Key:
+            <span class="order_key">3773734hfvbh488949fbf</span>
+          </div>
+          <div class="right_paragraph">
+            <div class="Date">
+              <p>Ordered: 13 August 2024 at 06:19 AM</p>
+            </div>
+            <div class="status">
+              <p class="status-text">progress</p>
+            </div>
+          </div>
+        </div>
+        <div class="item_num">
+          <p>No of items: <span class="number-items"> 3 </span></p>
+        </div>
+
+        <div class="items-wrapper">
+          <!--  -->
+        </div>
+
+        <div class="line">
+          <hr />
+        </div>
+
+        <div class="invoice">
+          <div class="Address">
+            <div class="Address_text">
+              <p>Address</p>
+            </div>
+            <div class="Address_info">
+              Al Sikka Al Hadid Al Gharbeya, Al Masaken Al
+              Iqtisadeyah,Helwan,Cairo
+            </div>
+          </div>
+
+          <div class="Payment">
+            <div class="Payment_text">
+              <p>Payment Method</p>
+            </div>
+            <div class="Payment_info">
+              <p>**** **** **** 4444</p>
+            </div>
+          </div>
+
+          <div class="Discount">
+            <div class="Discount_text">
+              <p>Discount</p>
+            </div>
+            <div class="Discount_info">
+              <p>none</p>
+            </div>
+          </div>
+
+          <div class="Order_Amount">
+            <div class="Order_Amount_text">
+              <p>Order Amount</p>
+            </div>
+            <div class="Order_Amount_info">
+              <p>72737 EGP</p>
+            </div>
+          </div>
+
+          <div class="fee">
+            <div class="fee_text">
+              <p>Fee</p>
+            </div>
+            <div class="fee_info">
+              <p>45 EGP</p>
+            </div>
+          </div>
+
+          <div class="Total_Amount_Price">
+            <div class="Total_Amount_Price_text">
+              <p>Total Amount Price</p>
+            </div>
+            <div class="Total_Amount_Price_info">
+              <p>72752 EGP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

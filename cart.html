@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/css/global.css" />
+    <link rel="stylesheet" href="./static/css/cart.css" />
+    <link rel="stylesheet" href="./static/css/table-items.css" />
+    <script type="module" src="./static/js/utils/loadLayout.js"></script>
+    <script type="module" src="./static/js/cart.js"></script>
+    <title>Shopping Cart</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <section class="container">
+      <h1>Shopping Cart</h1>
+
+      <div class="data-wrapper" id="data-wrapper">
+        <div id="table-cart"></div>
+        <a href="checkout.html" class="checkout-btn">Checkout</a>
+      </div>
+    </section>
+    <div id="footer"></div>
+  </body>
+</html>

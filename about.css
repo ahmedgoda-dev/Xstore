@@ -1,0 +1,126 @@
+/* link (about us upper) */
+.link {
+  margin-right: 290px;
+  margin-left: 290px;
+}
+
+.full {
+  width: 100%;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+/* image */
+.about-image {
+  flex: 1;
+  padding: 0;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* boxs */
+.box-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.box {
+  background-color: #6d62ff;
+  color: white;
+  min-width: 250px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+  border-radius: 50px;
+}
+
+.box h1 {
+  font-size: 36px;
+  margin: 0;
+  line-height: 1.2;
+  display: block;
+}
+
+.box p {
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  line-height: 1.4;
+  display: block;
+}
+
+/* paragraphes */
+.about-text p {
+  line-height: 1.5;
+  color: #333;
+  display: flex;
+  margin: auto;
+}
+
+/* circles */
+.skills {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.progress {
+  border-radius: 50%;
+  /* border: 5px solid var(--primary-color); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  position: relative;
+  top: 5px;
+  width: 180px;
+  height: 180px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(#6c63ff calc(var(--value) * 1%), #eee 0);
+}
+
+.progress span {
+  position: absolute;
+  display: block;
+  inset: 32px;
+  border-radius: 50%;
+  background-color: red;
+  background-color: var(--bg-default);
+  color: var(--primary-hover-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill p {
+  font-size: 14px;
+  color: #444;
+}

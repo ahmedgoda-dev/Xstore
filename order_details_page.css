@@ -1,0 +1,151 @@
+.main_line {
+  display: flex;
+}
+
+.left_paragraph {
+  padding-top: 10px;
+  flex: 1;
+  text-align: left !important;
+}
+
+.right_paragraph {
+  padding-top: 10px;
+  flex: 1;
+  text-align: right !important;
+}
+
+.right_paragraph p {
+  color: var(--info-color);
+}
+
+.order_key {
+  padding-left: 20px;
+}
+
+.right_paragraph {
+  padding-right: 20px;
+}
+
+.status {
+  padding-top: 10px;
+}
+
+.item_num {
+  padding-left: 20px;
+}
+
+.order_box {
+  display: flex;
+  margin-top: 20px;
+  background-color: var(--bg-paper);
+  border: 1px solid var(--divider);
+  border-radius: 5px;
+  height: 140px;
+}
+
+.order_image {
+  flex: 1;
+}
+
+.product_image {
+  border: 1px solid var(--divider);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.order_text {
+  flex: 3;
+  padding: 24px;
+}
+
+.order_text > * {
+  flex: 3;
+  margin-bottom: 8px;
+}
+
+.category:hover {
+  color: rgb(125, 224, 166);
+}
+
+.line {
+  margin-top: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: var(--divider);
+}
+
+.invoice {
+  margin-left: 21px;
+  margin-top: 21px;
+}
+
+.invoice p {
+  margin-bottom: 10px;
+}
+
+.Address,
+.Payment,
+.Discount,
+.Order_Amount,
+.fee,
+.Total_Amount_Price {
+  display: flex;
+}
+
+.Address:hover,
+.Payment:hover,
+.Discount:hover,
+.Order_Amount:hover,
+.fee:hover,
+.Total_Amount_Price:hover {
+  color: var(--secondary-color);
+}
+
+.Address_text {
+  flex: 1;
+}
+
+.Address_info {
+  flex: 1;
+}
+
+.Payment_text {
+  flex: 1;
+}
+
+.Payment_info {
+  flex: 1;
+}
+
+.Discount_text {
+  flex: 1;
+}
+
+.Discount_info {
+  flex: 1;
+}
+
+.Order_Amount_text {
+  flex: 1;
+}
+
+.Order_Amount_info {
+  flex: 1;
+}
+
+.fee_text {
+  flex: 1;
+}
+
+.fee_info {
+  flex: 1;
+}
+
+.Total_Amount_Price_text {
+  flex: 1;
+}
+
+.Total_Amount_Price_info {
+  flex: 1;
+}

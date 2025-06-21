@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Account</title>
+    <link rel="stylesheet" href="./static/css/global.css" />
+    <link rel="stylesheet" href="./static/css/signup.css" />
+    <script type="module" src="./static/js/utils/loadLayout.js"></script>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <!-- Error box will be inserted here -->
+      <div
+        id="error-box"
+        style="
+          display: none;
+          background-color: #ffebee;
+          color: #d32f2f;
+          padding: 15px;
+          margin-bottom: 20px;
+          border-radius: 4px;
+          border-left: 5px solid #d32f2f;
+        "
+      ></div>
+    </div>
+    <div class="container">
+      <h1>Register Account</h1>
+      <p class="main-paragraph">
+        If you already have an account with us, please login at the
+        <a href="./login.html">Login page</a>.
+      </p>
+      <form action="" id="registration-form">
+        <div class="form-inline">
+          <div class="form-group">
+            <label for="first-name">First name</label>
+            <input
+              id="first-name"
+              maxlength="16"
+              type="text"
+              placeholder="First Name"
+              required
+            />
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last name</label>
+            <input
+              id="last-name"
+              type="text"
+              maxlength="16"
+              placeholder="Last name"
+              required
+            />
+            <span class="error-message"></span>
+          </div>
+        </div>
+        <div class="form-inline">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email" required />
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+              <option value="">-- Choose --</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <span class="error-message"></span>
+          </div>
+        </div>
+        <div class="form-inline">
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              id="confirm-password"
+              type="password"
+              placeholder="Confirm Password"
+              required
+            />
+            <span class="error-message"></span>
+          </div>
+        </div>
+        <div class="btn">
+          <button class="button" type="submit">Continue</button>
+        </div>
+      </form>
+    </div>
+    <div id="footer"></div>
+    <script type="module" src="./static/js/signup.js"></script>
+  </body>
+</html>

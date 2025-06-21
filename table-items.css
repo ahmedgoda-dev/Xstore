@@ -1,0 +1,68 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid var(--divider);
+  vertical-align: top;
+  text-align: left;
+}
+
+th {
+  background-color: var(--bg-paper);
+}
+
+.product-info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-info img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quantity-controls input {
+  width: 40px;
+  text-align: center;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+}
+
+.btn-inc {
+  background-color: var(--primary-color);
+}
+
+.btn-dec {
+  background-color: var(--secondary-color);
+}
+
+.text-right {
+  text-align: right;
+}
+
+.totals {
+  font-weight: bold;
+}
+
+.light {
+  font-weight: normal;
+}

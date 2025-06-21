@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./static/css/global.css" />
+    <link rel="stylesheet" href="./static/css/profile.css" />
+    <script type="module" src="./static/js/utils/loadLayout.js"></script>
+    <script type="module" src="./static/js/profile.js"></script>
+    <title>Profile - XStore</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="split-screen">
+      <div class="menu">
+        <h2>Personal info</h2>
+        <ul>
+          <li>
+            <a href="#account-info"
+              ><svg
+                viewBox="0 0 1024 1024"
+                fill="#000000"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M110.4 923.2c-56.8 0-102.4-48-102.4-106.4V285.6c0-58.4 45.6-106.4 102.4-106.4h800.8c56.8 0 102.4 48 102.4 106.4V816c0 58.4-45.6 106.4-102.4 106.4H110.4z m0-701.6c-34.4 0-61.6 28.8-61.6 64V816c0 35.2 28 64 61.6 64h800.8c34.4 0 61.6-28.8 61.6-64V285.6c0-35.2-28-64-61.6-64H110.4z"
+                    fill=""
+                  ></path>
+                  <path
+                    d="M541.6 392c-12.8 0-23.2-10.4-23.2-24s10.4-24 23.2-24h328c12.8 0 23.2 10.4 23.2 24s-10.4 24-23.2 24h-328zM541.6 511.2c-12.8 0-23.2-10.4-23.2-24s10.4-24 23.2-24h328c12.8 0 23.2 10.4 23.2 24s-10.4 24-23.2 24h-328zM541.6 638.4c-12.8 0-23.2-10.4-23.2-24s10.4-24 23.2-24h276.8c12.8 0 23.2 10.4 23.2 24s-10.4 24-23.2 24H541.6zM58.4 886.4c-2.4 0-4.8 0-7.2-0.8-12.8-4-20-18.4-16-32 23.2-78.4 77.6-142.4 148-176l16-8-13.6-12c-40-34.4-63.2-85.6-63.2-139.2 0-100 78.4-180.8 173.6-180.8 96 0 173.6 80.8 173.6 180.8 0 53.6-23.2 104.8-63.2 139.2l-13.6 12 16 8c68 32 132.8 112 157.6 194.4 16 52.8-16.8 36-1.6 16-3.2 4.8-16.8-5.6-32-5.6-12.8 0-19.2 24.8-19.2 22.4-31.2-104-120.8-203.2-217.6-203.2-99.2 0-186.4 67.2-216 166.4-1.6 11.2-11.2 18.4-21.6 18.4z m239.2-498.4c-69.6 0-126.4 58.4-126.4 130.4s56.8 130.4 126.4 130.4c69.6 0 126.4-58.4 126.4-130.4-0.8-72-56.8-130.4-126.4-130.4z"
+                    fill=""
+                  ></path>
+                </g>
+              </svg>
+              Account info</a
+            >
+          </li>
+          <li>
+            <a href="#change-password"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M12 14.5V16.5M7 10.0288C7.47142 10 8.05259 10 8.8 10H15.2C15.9474 10 16.5286 10 17 10.0288M7 10.0288C6.41168 10.0647 5.99429 10.1455 5.63803 10.327C5.07354 10.6146 4.6146 11.0735 4.32698 11.638C4 12.2798 4 13.1198 4 14.8V16.2C4 17.8802 4 18.7202 4.32698 19.362C4.6146 19.9265 5.07354 20.3854 5.63803 20.673C6.27976 21 7.11984 21 8.8 21H15.2C16.8802 21 17.7202 21 18.362 20.673C18.9265 20.3854 19.3854 19.9265 19.673 19.362C20 18.7202 20 17.8802 20 16.2V14.8C20 13.1198 20 12.2798 19.673 11.638C19.3854 11.0735 18.9265 10.6146 18.362 10.327C18.0057 10.1455 17.5883 10.0647 17 10.0288M7 10.0288V8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8V10.0288"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              Change password</a
+            >
+          </li>
+          <li>
+            <a href="#favourites"
+              ><svg
+                fill="#000000"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g data-name="24 wishlist" id="_24_wishlist">
+                    <path
+                      d="M27.11,17.74a1,1,0,0,1-1,1H16.79a1,1,0,0,1,0-2h9.32A1,1,0,0,1,27.11,17.74Z"
+                    ></path>
+                    <path
+                      d="M39.79,16.65,35.71,20a1.025,1.025,0,0,1-.64.23.948.948,0,0,1-.65-.25l-2.78-2.42a1,1,0,0,1-.1-1.41,1.011,1.011,0,0,1,1.42-.1l2.13,1.87,3.44-2.82a.989.989,0,0,1,1.4.14A1,1,0,0,1,39.79,16.65Z"
+                    ></path>
+                    <path
+                      d="M27.11,27.06a1,1,0,0,1-1,1H16.79a1,1,0,0,1,0-2h9.32A1,1,0,0,1,27.11,27.06Z"
+                    ></path>
+                    <path
+                      d="M39.79,25.97l-4.08,3.35a.97.97,0,0,1-.64.23.948.948,0,0,1-.65-.25l-2.78-2.42a1,1,0,0,1-.1-1.41,1.011,1.011,0,0,1,1.42-.1l2.13,1.87,3.44-2.82a.989.989,0,0,1,1.4.14A1,1,0,0,1,39.79,25.97Z"
+                    ></path>
+                    <path
+                      d="M27.11,36.38a1,1,0,0,1-1,1H16.79a1,1,0,0,1,0-2h9.32A1,1,0,0,1,27.11,36.38Z"
+                    ></path>
+                    <path
+                      d="M39.79,35.29l-4.08,3.36a1.015,1.015,0,0,1-.64.22.987.987,0,0,1-.65-.24L31.64,36.2a1,1,0,0,1-.1-1.41,1.01,1.01,0,0,1,1.42-.09l2.13,1.86,3.44-2.82a1,1,0,0,1,1.26,1.55Z"
+                    ></path>
+                    <path
+                      d="M27.11,45.7a1,1,0,0,1-1,1H16.79a1,1,0,0,1,0-2h9.32A1,1,0,0,1,27.11,45.7Z"
+                    ></path>
+                    <path
+                      d="M45.75,38.46V9.93A3.718,3.718,0,0,0,41.96,6.3H35.5V5.5a2.006,2.006,0,0,0-2-2H22.45a2.006,2.006,0,0,0-2,2v.8H13.99a3.727,3.727,0,0,0-3.8,3.63V52.2a3.728,3.728,0,0,0,3.8,3.64H33.45a11.248,11.248,0,1,0,12.3-17.38ZM22.45,5.5H33.5V9.09H22.45ZM13.99,53.84a1.752,1.752,0,0,1-1.8-1.64V9.93a1.751,1.751,0,0,1,1.8-1.63h6.46v.79a2,2,0,0,0,2,2H33.5a2,2,0,0,0,2-2V8.3h6.46a1.741,1.741,0,0,1,1.79,1.63V38.06a11.726,11.726,0,0,0-1.2-.07A11.238,11.238,0,0,0,32.29,53.84ZM42.55,58.5a9.255,9.255,0,1,1,9.26-9.25A9.261,9.261,0,0,1,42.55,58.5Z"
+                    ></path>
+                    <path
+                      d="M49.52,46.61c-.01-.11-.03-.21-.05-.32a3.519,3.519,0,0,0-3.48-2.94h-.02a5,5,0,0,0-3.42,1.46,4.963,4.963,0,0,0-3.42-1.46h-.01a3.326,3.326,0,0,0-.96.15.749.749,0,0,0-.16.04,3.5,3.5,0,0,0-2.01,1.73c-.01.03-.02.05-.03.08a3.682,3.682,0,0,0-.33.95c-.02.1-.03.2-.05.31-.65,4.9,4.37,8.58,5.89,9.57l.51.35a.931.931,0,0,0,.57.19.959.959,0,0,0,.58-.19l.47-.33C45.15,55.19,50.17,51.51,49.52,46.61ZM42.55,54.5c-2.67-1.76-5.38-4.67-4.98-7.63l.03-.21a1.526,1.526,0,0,1,1.52-1.31,3.026,3.026,0,0,1,2.54,1.58,1.039,1.039,0,0,0,1.78,0,3.039,3.039,0,0,1,2.54-1.58,1.518,1.518,0,0,1,1.52,1.3l.04.22C47.93,49.82,45.25,52.72,42.55,54.5Z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              Favourites</a
+            >
+          </li>
+        </ul>
+        <h2>My orders</h2>
+        <ul>
+          <li>
+            <a href="#orders-in-progress"
+              ><svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill="none"
+                    stroke="#000000"
+                    stroke-width="2"
+                    d="M1,1 L23,1 M10,4.5 L14,4.5 C14,4.5 14,6 14,6 C14,7 12,8 12,8 C12,8 10,7 10,6 C10,6 10,4.5 10,4.5 Z M5,1 C5,1 5,3 5,6 C5,9 10,9.23530084 10,12 C10,14.7646992 5.00000001,15 5,18 C4.99999999,21 5,23 5,23 M19,1 C19,1 19,3 19,6 C19,9 14,9.23530084 14,12 C14,14.7646992 19,15 19,18 C19,21 19,23 19,23 M1,23 L23,23 M8,21 C8,19 12,17 12,17 C12,17 16,19 16,21 C16,21 16,23 16,23 L8,23 L8,21 Z"
+                  ></path>
+                </g>
+              </svg>
+              Orders in progress</a
+            >
+          </li>
+          <li>
+            <a href="#orders-completed"
+              ><svg
+                viewBox="0 0 1024 1024"
+                fill="#000000"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M959.018 208.158c0.23-2.721 0.34-5.45 0.34-8.172 0-74.93-60.96-135.89-135.89-135.89-1.54 0-3.036 0.06-6.522 0.213l-611.757-0.043c-1.768-0.085-3.563-0.17-5.424-0.17-74.812 0-135.67 60.84-135.67 135.712l0.188 10.952h-0.306l0.391 594.972-0.162 20.382c0 74.03 60.22 134.25 134.24 134.25 1.668 0 7.007-0.239 7.1-0.239l608.934 0.085c2.985 0.357 6.216 0.468 9.55 0.468 35.815 0 69.514-13.954 94.879-39.302 25.373-25.34 39.344-58.987 39.344-94.794l-0.145-12.015h0.918l-0.008-606.41z m-757.655 693.82l-2.585-0.203c-42.524 0-76.146-34.863-76.537-79.309V332.671H900.79l0.46 485.186-0.885 2.865c-0.535 1.837-0.8 3.58-0.8 5.17 0 40.382-31.555 73.766-71.852 76.002l-10.816 0.621v-0.527l-615.533-0.01zM900.78 274.424H122.3l-0.375-65.934 0.85-2.924c0.52-1.82 0.782-3.63 0.782-5.247 0-42.236 34.727-76.665 78.179-76.809l0.45-0.068 618.177 0.018 2.662 0.203c42.329 0 76.767 34.439 76.767 76.768 0 1.326 0.196 2.687 0.655 4.532l0.332 0.884v68.577z"
+                    fill=""
+                  ></path>
+                  <path
+                    d="M697.67 471.435c-7.882 0-15.314 3.078-20.918 8.682l-223.43 223.439L346.599 596.84c-5.544-5.603-12.95-8.69-20.842-8.69s-15.323 3.078-20.918 8.665c-5.578 5.518-8.674 12.9-8.7 20.79-0.017 7.908 3.07 15.357 8.69 20.994l127.55 127.558c5.57 5.56 13.01 8.622 20.943 8.622 7.925 0 15.364-3.06 20.934-8.63l244.247-244.247c5.578-5.511 8.674-12.883 8.7-20.783 0.017-7.942-3.079-15.408-8.682-20.986-5.552-5.612-12.958-8.698-20.85-8.698z"
+                    fill=""
+                  ></path>
+                </g>
+              </svg>
+              Orders Completed</a
+            >
+          </li>
+          <li>
+            <a href="#orders-cancelled"
+              ><svg
+                fill="#000000"
+                viewBox="0 0 32 32"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>cancel</title>
+                  <path
+                    d="M10.771 8.518c-1.144 0.215-2.83 2.171-2.086 2.915l4.573 4.571-4.573 4.571c-0.915 0.915 1.829 3.656 2.744 2.742l4.573-4.571 4.573 4.571c0.915 0.915 3.658-1.829 2.744-2.742l-4.573-4.571 4.573-4.571c0.915-0.915-1.829-3.656-2.744-2.742l-4.573 4.571-4.573-4.571c-0.173-0.171-0.394-0.223-0.657-0.173v0zM16 1c-8.285 0-15 6.716-15 15s6.715 15 15 15 15-6.716 15-15-6.715-15-15-15zM16 4.75c6.213 0 11.25 5.037 11.25 11.25s-5.037 11.25-11.25 11.25-11.25-5.037-11.25-11.25c0.001-6.213 5.037-11.25 11.25-11.25z"
+                  ></path>
+                </g>
+              </svg>
+              Orders Cancelled</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="home-dropdown burger-menu">
+          <img
+            src="./static/imgs/burger-menu.png"
+            alt="Menu"
+            class="icon-img"
+          />
+          <div class="home-submenu">
+            <a href="#account-info"> Account info</a>
+            <a href="#change-password"> Change password</a>
+            <a href="#addresses"> Addresses</a>
+            <a href="#favourites"> Favourites</a>
+            <a href="#orders-in-progress"> Orders Completed</a>
+            <a href="#orders-completed"> Orders Completed</a>
+            <a href="#orders-cancelled"> Orders Cancelled</a>
+          </div>
+        </div>
+        <div class="container">
+          <div id="account-info" class="section">
+            <div class="account-info-container">
+              <h1>My Account Information</h1>
+
+              <form action="" id="edit-info-form">
+                <div class="form-inline">
+                  <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input
+                      id="full-name"
+                      maxlength="16"
+                      type="text"
+                      placeholder="Full Name"
+                      required
+                    />
+                    <span class="error-message"></span>
+                  </div>
+                </div>
+                <div class="form-inline">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="Email"
+                      required
+                    />
+                    <span class="error-message"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" required>
+                      <option value="">-- Choose --</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                    <span class="error-message"></span>
+                  </div>
+                </div>
+
+                <div class="btn">
+                  <button class="continue-button" type="submit">Save</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div id="change-password" class="section">
+            <div class="change-password-container">
+              <h1>Change Password</h1>
+
+              <form id="update-password-form">
+                <div class="form-group">
+                  <label for="old-password">Old Password</label>
+                  <input
+                    type="password"
+                    id="old-password"
+                    placeholder="Old Password here..."
+                  />
+                  <span class="error-message"></span>
+                </div>
+                <div class="form-inline">
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      placeholder="Choose strong password..."
+                    />
+                    <span class="error-message"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="confirm-password">Password Confirm</label>
+                    <input
+                      type="password"
+                      id="confirm-password"
+                      placeholder="Password Confirm"
+                    />
+                    <span class="error-message"></span>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <button class="continue-button" type="submit">
+                    Update Password
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div id="favourites" class="section">
+            <div class="wish-list-container">
+              <h1>Favourites List</h1>
+
+              <div id="wish-list-data">
+                <p class="empty-message">You have no favourites!</p>
+              </div>
+
+              <div class="buttons">
+                <button
+                  class="continue-button delete-all-fav-btn"
+                  id="delete-all-fav"
+                >
+                  Delete all
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="orders-in-progress" class="section">
+            <div class="orders-container">
+              <h1>Orders in Progress</h1>
+
+              <div id="orders-in-progress-wrapper">
+                <p class="empty-message">
+                  You have not made any previous orders!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="orders-completed" class="section">
+            <div class="orders-container">
+              <h1>Completed Orders</h1>
+
+              <div id="orders-completed-wrapper">
+                <p class="empty-message">You have no completed orders!</p>
+              </div>
+            </div>
+          </div>
+          <div id="orders-cancelled" class="section">
+            <div class="orders-container">
+              <h1>Cancelled Orders</h1>
+
+              <div id="orders-cancelled-wrapper">
+                <p class="empty-message">You have no cancelled orders!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

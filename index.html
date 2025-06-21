@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XStore - Home</title>
+    <link href="./static/css/index.css" rel="stylesheet" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';"
+    />
+    <link rel="stylesheet" href="./static/css/global.css" />
+    <script type="module" src="./static/js/utils/loadLayout.js" defer></script>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div class="container">
+      <section class="banner-slider-section">
+        <div class="slider-container banner-slider">
+          <div class="slider-track">
+            <div class="slide">
+              <img src="./static/imgs/banner1.jpg" alt="Banner 1" />
+            </div>
+            <div class="slide">
+              <img src="./static/imgs/banner2.jpg" alt="Banner 2" />
+            </div>
+            <div class="slide">
+              <img src="./static/imgs/banner3.jpg" alt="Banner 3" />
+            </div>
+          </div>
+          <button class="slider-prev">&lt;</button>
+          <button class="slider-next">&gt;</button>
+        </div>
+      </section>
+      <section class="section-elements">
+        <div class="title">New Arrivals</div>
+
+        <div class="slider-wrapper">
+          <div class="card-slider" id="new-arrivales">
+            <!--  -->
+          </div>
+          <button class="slider-btn left">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="slider-btn right">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="title">
+          <span class="highlight-color">Hot Deals!</span>Get Our Best Price
+        </h2>
+        <div class="countdown-section">
+          <!-- <div class="countdown-timer" id="countdown">
+            Deal ends in: <span id="timer">00:00:00</span>
+          </div> -->
+          <div class="countdown">
+            <div class="countdown-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="white"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 22a9 9 0 1 1 9-9 9.01 9.01 0 0 1-9 9Zm0-16a7 7 0 1 0 7 7 7.01 7.01 0 0 0-7-7Zm1 7h3v2h-5V8h2Zm-7.88-6.12-2.12-2.12L4.46 2 6.59 4.12ZM19.54 2l2.12 2.12-2.12 2.12L17.41 4.12Z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <div class="time-block" id="days">000</div>
+              <div class="label">DAYS</div>
+            </div>
+
+            <div>
+              <div class="time-block" id="hours">00</div>
+              <div class="label">HOURS</div>
+            </div>
+
+            <div>
+              <div class="time-block" id="minutes">00</div>
+              <div class="label">MINUTES</div>
+            </div>
+
+            <div>
+              <div class="time-block" id="seconds">00</div>
+              <div class="label">SECONDS</div>
+            </div>
+          </div>
+          <div class="slider-wrapper">
+            <div class="card-slider" id="best-deals">
+              <div class="product__card">
+                <div class="img-container">
+                  <div class="overlay"></div>
+                  <img
+                    src="./static/imgs/Screenshot 2025-05-05 205357.png"
+                    alt="Ram Farid"
+                  />
+                </div>
+                <a class="img-description" href="#">
+                  Our Leader &#10084;&#65039;</a
+                >
+
+                <div class="ratingStar">
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                </div>
+                <p class="prices">120 L.E</p>
+                <div class="buttons">
+                  <button title="Add to marketplace">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wish list">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product__card">
+                <div class="img-container">
+                  <div class="overlay"></div>
+                  <img src="./static/imgs/shoes.jpg" alt="Shoes img" />
+                </div>
+                <a class="img-description" href="#">Modern Shoes</a>
+                <div class="ratingStar">
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                </div>
+                <p class="prices">120 L.E</p>
+                <div class="buttons">
+                  <button title="Add to marketplace">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wish list">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product__card">
+                <div class="img-container">
+                  <div class="overlay"></div>
+                  <img src="./static/imgs/table.jpg" alt="Table Pic" />
+                </div>
+                <a class="img-description" href="#">Well designed Table </a>
+                <div class="ratingStar">
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                </div>
+                <p class="prices">120 L.E</p>
+                <div class="buttons">
+                  <button title="Add to marketplace">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wish list">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product__card">
+                <div class="img-container">
+                  <div class="overlay"></div>
+                  <img src="./static/imgs/per4-400x400.jpg" alt="Toothpaste" />
+                </div>
+                <a class="img-description" href="#">Listerine Toothpaste</a>
+                <div class="ratingStar">
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                </div>
+                <p class="prices">120 L.E</p>
+                <div class="buttons">
+                  <button title="Add to marketplace">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wish list">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product__card">
+                <div class="img-container">
+                  <div class="overlay"></div>
+                  <img
+                    src="./static/imgs/per1-400x400.jpg"
+                    alt="Face wash Pic"
+                  />
+                </div>
+                <a class="img-description" href="#">Face wash cream</a>
+                <div class="ratingStar">
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                </div>
+                <p class="prices">120 L.E</p>
+                <div class="buttons">
+                  <button title="Add to marketplace">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wish list">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product__card">
+                <div class="img-container">
+                  <div class="overlay"></div>
+                  <img
+                    src="./static/imgs/foot5-400x400.jpg"
+                    alt="Softsoap img"
+                  />
+                </div>
+                <a class="img-description" href="#">Softsoap washer</a>
+                <div class="ratingStar">
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                </div>
+                <p class="prices">120 L.E</p>
+                <div class="buttons">
+                  <button title="Add to marketplace">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wish list">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product__card">
+                <div class="img-container">
+                  <div class="overlay"></div>
+                  <img src="./static/imgs/iphone.jpg" alt="IPhone mobile Pic" />
+                </div>
+                <a class="img-description" href="#">IPhone 15 pro</a>
+                <div class="ratingStar">
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                </div>
+                <p class="prices">120 L.E</p>
+                <div class="buttons">
+                  <button title="Add to marketplace">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wish list">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product__card">
+                <div class="img-container">
+                  <div class="overlay"></div>
+                  <img src="./static/imgs/9-400x400.jpg" alt="Headphones img" />
+                </div>
+                <a class="img-description" href="#">Ultrabase Headphones</a>
+                <div class="ratingStar">
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                </div>
+                <p class="prices">120 L.E</p>
+                <div class="buttons">
+                  <button title="Add to marketplace">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wish list">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product__card">
+                <div class="img-container">
+                  <div class="overlay"></div>
+                  <img src="./static/imgs/13-400x400.jpg" alt="Shoes Pic" />
+                </div>
+                <a class="img-description" href="#">Perfectionism Shoes</a>
+                <div class="ratingStar">
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                </div>
+                <p class="prices">120 L.E</p>
+                <div class="buttons">
+                  <button title="Add to marketplace">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wish list">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product__card">
+                <div class="img-container">
+                  <div class="overlay"></div>
+                  <img
+                    src="./static/imgs/IT-Project-face1-conciler-400x400.jpg"
+                    alt="Makeup Pic"
+                  />
+                </div>
+                <a class="img-description" href="#">Hydrated Camo Concealer</a>
+                <div class="ratingStar">
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                </div>
+                <p class="prices">120 L.E</p>
+                <div class="buttons">
+                  <button title="Add to marketplace">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wish list">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product__card">
+                <div class="img-container">
+                  <div class="overlay"></div>
+                  <img src="./static/imgs/15-400x400.jpg" alt="Sofa Pic" />
+                </div>
+                <a class="img-description" href="#">Comfortable Sofa - IKEA</a>
+                <div class="ratingStar">
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                  <svg width="30px" height="30px"><use href="#star" /></svg>
+                </div>
+                <p class="prices">120 L.E</p>
+                <div class="buttons">
+                  <button title="Add to marketplace">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wish list">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="slider-btn left">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="slider-btn right">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="categories-section">
+        <h2 class="title">Shop by Category</h2>
+        <div class="categories-container">
+          <div class="category">
+            <div class="category-img-container">
+              <button class="category-button">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <img
+                src="./static/imgs/Categories_1-325x110.jpg"
+                alt="AHMEEEEEEED GODAAAAAAAA"
+              />
+            </div>
+            <a href="#">Technology</a>
+          </div>
+          <div class="category">
+            <div class="category-img-container">
+              <button class="category-button">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <img
+                src="./static/imgs/fashion-advertising.jpg"
+                alt="Ahmed Goda gamed fash5 AHAHAHAHA !"
+              />
+            </div>
+            <a href="#">Clothes</a>
+          </div>
+          <div class="category">
+            <div class="category-img-container">
+              <button class="category-button">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <img
+                src="./static/imgs/Categories_2-325x110.jpg"
+                alt="Ahmed Goda gamed fash5 AHAHAHAHA !"
+              />
+            </div>
+            <a href="#">Furniture</a>
+          </div>
+          <div class="category">
+            <div class="category-img-container">
+              <button class="category-button">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <img
+                src="./static/imgs/Categories_3-325x110.jpg"
+                alt="Ahmed Goda gamed fash5 AHAHAHAHA !"
+              />
+            </div>
+            <a href="#">Fashion</a>
+          </div>
+          <div class="category">
+            <div class="category-img-container">
+              <button class="category-button">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <img
+                src="./static/imgs/Categories_4-325x110.jpg"
+                alt="Ahmed Goda gamed fash5 AHAHAHAHA !"
+              />
+            </div>
+            <a href="#">Accessories</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="footer"></div>
+    <script type="module" src="./static/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/css/global.css" />
+    <link rel="stylesheet" href="./static/css/checkout.css" />
+    <link rel="stylesheet" href="./static/css/table-items.css" />
+    <script type="module" src="./static/js/checkout.js" defer></script>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';"
+    />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="container">
+      <form id="checkoutForm">
+        <h1>Checkout</h1>
+        <div class="data-wrapper">
+          <div class="form-inline">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" required />
+            </div>
+          </div>
+          <div class="form-inline">
+            <div class="form-group">
+              <label for="address1">Address Line 1 *</label>
+              <input type="text" id="address1" required />
+            </div>
+
+            <div class="form-group">
+              <label for="address2">Address Line 2</label>
+              <input type="text" id="address2" />
+            </div>
+          </div>
+
+          <div class="form-inline">
+            <div class="form-group">
+              <label for="country">Country *</label>
+              <input type="text" id="country" required />
+            </div>
+            <div class="form-group">
+              <label for="city">City *</label>
+              <select id="city" required>
+                <option value="">-- Choose --</option>
+                <option value="">-- اختر --</option>
+                <option value="1001">القاهرة</option>
+                <option value="1002">الجيزة</option>
+                <option value="1003">الإسكندرية</option>
+                <option value="1004">القليوبية</option>
+                <option value="1005">الشرقية</option>
+                <option value="1006">الدقهلية</option>
+                <option value="1007">البحيرة</option>
+                <option value="1008">المنوفية</option>
+                <option value="1009">الغربية</option>
+                <option value="1010">كفر الشيخ</option>
+                <option value="1011">دمياط</option>
+                <option value="1012">بورسعيد</option>
+                <option value="1013">الإسماعيلية</option>
+                <option value="1014">السويس</option>
+                <option value="1015">مطروح</option>
+                <option value="1016">البحر الأحمر</option>
+                <option value="1017">الفيوم</option>
+                <option value="1018">بني سويف</option>
+                <option value="1019">المنيا</option>
+                <option value="1020">أسيوط</option>
+                <option value="1021">سوهاج</option>
+                <option value="1022">قنا</option>
+                <option value="1023">الأقصر</option>
+                <option value="1024">أسوان</option>
+                <option value="1025">الوادي الجديد</option>
+                <option value="1026">شمال سيناء</option>
+                <option value="1027">جنوب سيناء</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Notes</label>
+            <textarea class="notes" id="notes" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="shipping">Shipping Method *</label>
+            <select id="shipping" required>
+              <option value="delivery">-- Choose --</option>
+              <option value="standard">Checkout (Free)</option>
+              <option value="delivery">Delivery (+50 LE)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="payment">Payment Method *</label>
+            <select id="payment" required>
+              <option value="">-- Choose --</option>
+              <option value="cash">Cash on Delivery</option>
+              <option value="card">Credit / Debit Card</option>
+            </select>
+          </div>
+
+          <div id="paymentDetails" class="hidden">
+            <div class="form-group">
+              <label for="cardNumber">Card Number *</label>
+              <input type="text" id="cardNumber" />
+            </div>
+            <div class="form-inline">
+              <div class="form-group">
+                <label for="cardName">Cardholder Name *</label>
+                <input type="text" id="cardName" />
+              </div>
+              <div class="form-group">
+                <label for="cardCVV">CVV *</label>
+                <input type="text" id="cardCVV" />
+              </div>
+            </div>
+          </div>
+          <div id="table-container">
+            <!--  -->
+          </div>
+
+          <button class="place-order" type="submit">Place Order</button>
+        </div>
+      </form>
+    </div>
+    <div id="footer"></div>
+    <script type="module" src="./static/js/utils/loadLayout.js"></script>
+  </body>
+</html>

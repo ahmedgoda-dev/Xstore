@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./static/css/global.css" />
+    <link rel="stylesheet" href="./static/css/single-product1.css" />
+    <script type="module" src="./static/js/utils/loadLayout.js" defer></script>
+    <script type="module" src="./static/js/single-product.js" defer></script>
+    <title>Single Product</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="container" id="single-product-container">
+      <div class="product-content-container">
+        <div class="product-gallery">
+          <div class="main-image-container" id="main-image-container">
+            <img
+              class="main-image"
+              src="./static/imgs/product_image2.jpg"
+              alt=""
+              width="200px"
+            />
+          </div>
+          <div class="thumbnail-container" id="thumbnail-container">
+            <div class="thumbnail active">
+              <img
+                src="./static/imgs/product_image2.jpg"
+                alt="PanOxyl product image"
+                width="200px"
+              />
+            </div>
+            <div class="thumbnail">
+              <img
+                src="./static/imgs/prdouct_image1.jpg"
+                alt="PanOxyl product image"
+                width="200px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product-information">
+          <p class="name" id="product-title">PanOxyl Antimicrobial Hydrating</p>
+          <div class="stars" id="rate-stars-container"></div>
+          <p>Stock Left: <span class="Days" id="stock">1200 piece</span></p>
+          <p class="description" id="description">
+            Gentle enough for everyday use and strong enough to combat the
+            peskiest pimples, this daily wash contains 4% Benzoyl peroxide to
+            clear acne at Lightni
+          </p>
+          <br />
+          <p class="price" id="price"></p>
+          <p
+            style="text-decoration: line-through; margin: 12px 0"
+            id="before-discount"
+          ></p>
+          <p>Quantity:</p>
+          <div class="quantity-selector">
+            <div class="quantity-control">
+              <button class="qty-minus">-</button>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                class="qty-input"
+                id="quantity-input"
+              />
+              <button class="qty-plus">+</button>
+            </div>
+          </div>
+          <div class="variant-selector">
+            <div class="select-wrapper">
+              <label for="variant" class="select-label">Variant</label>
+              <div class="custom-select">
+                <select
+                  name="variant"
+                  id="select-input"
+                  class="select-input"
+                ></select>
+                <span class="select-arrow">⌄</span>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="product-actions">
+            <button class="add-to-cart-btn" id="add-to-cart-btn">
+              Add to cart
+            </button>
+            <button class="buy-now-btn" id="buy-now-btn">BUY NOW</button>
+          </div>
+          <br /><br /><br />
+          <hr />
+          <div class="more-info">
+            <p>product code: <span class="code" id="code">id1-10</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="meta-data-container">
+        <div class="banner-sidebar">
+          <div class="card_feautre">
+            <img
+              class="service-icon"
+              src="./static/imgs/icon-policy1.jpg"
+              alt="Free Shipping"
+            />
+            <div class="feature-text">
+              <h4>Free Shipping</h4>
+              <p>on orders over $49.00</p>
+            </div>
+          </div>
+          <div class="card_feautre">
+            <img
+              class="service-icon"
+              src="./static/imgs/icon-policy2.jpg"
+              alt="7 Days Money Back"
+            />
+            <div class="feature-text">
+              <h4>7 Days Money Back</h4>
+              <p>30 days money back</p>
+            </div>
+          </div>
+          <div class="card_feautre">
+            <img
+              class="service-icon"
+              src="./static/imgs/icon-policy3.jpg"
+              alt="Online Support"
+            />
+            <div class="feature-text">
+              <h4>Online Support</h4>
+              <p>support online 24h on day</p>
+            </div>
+          </div>
+          <div class="card_feautre">
+            <img
+              class="service-icon"
+              src="./static/imgs/icon-policy4.jpg"
+              alt="Gift Promotion"
+            />
+            <div class="feature-text">
+              <h4>Gift Promotion</h4>
+              <p>on orders over $99.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="meta-data">
+          <div class="tabs-container">
+            <p class="tab active"><b>Description</b></p>
+            <p class="tab"><b>Reviews</b></p>
+            <p class="tab"><b>Shipping Methods</b></p>
+          </div>
+
+          <div class="tab-content active product-description">
+            <h3>Product Description</h3>
+            <div id="full-desc"></div>
+          </div>
+
+          <div class="tab-content reviews-content">
+            <div class="reviews-page">
+              <div class="reviews-container">
+                <h2 class="reviews-title">Our Customers Reviews</h2>
+
+                <div class="reviews-box" id="reviews-box">
+                  <!--  -->
+                </div>
+              </div>
+              <div class="write-areview">
+                <div class="form-group">
+                  <label for="your-review">Your Comment</label>
+                  <input
+                    required
+                    class="your-review"
+                    id="your-review"
+                    type="text"
+                  />
+                </div>
+                <div class="stars__">
+                  <input type="radio" name="rating" id="star5" value="5" />
+                  <label for="star5">★</label>
+                  <input type="radio" name="rating" id="star4" value="4" />
+                  <label for="star4">★</label>
+                  <input type="radio" name="rating" id="star3" value="3" />
+                  <label for="star3">★</label>
+                  <input type="radio" name="rating" id="star2" value="2" />
+                  <label for="star2">★</label>
+                  <input type="radio" name="rating" id="star1" value="1" />
+                  <label for="star1">★</label>
+                </div>
+                <button class="continue" id="submit-review-btn">Submit</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content shipping-content">
+            <h3>Returns Policy</h3>
+            <p>
+              You may return most new, unopened items within 30 days of
+              delivery...
+            </p>
+            <h3>Shipping</h3>
+            <p>We can ship to virtually any address in the world...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>

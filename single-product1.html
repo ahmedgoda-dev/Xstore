@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./static/css/global.css" />
+    <link rel="stylesheet" href="./static/css/single-product.css" />
+    <script src="./static/js/single-product.js" defer></script>
+    <script type="module" src="./static/js/utils/loadLayout.js" defer></script>
+    <title>Product Data</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';"
+    />
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <main class="container">
+      <div class="product-content-container">
+        <div class="product-gallery">
+          <div class="main-image-container">
+            <img
+              class="main-image"
+              src="./static/imgs/product_image2.jpg"
+              alt=""
+              width="200px"
+            />
+          </div>
+
+          <!-- الصور المصغرة -->
+          <div class="thumbnail-container">
+            <div class="thumbnail active">
+              <img
+                src="./static/imgs/product_image2.jpg"
+                alt=""
+                width="200px"
+              />
+            </div>
+            <div class="thumbnail">
+              <img
+                src="./static/imgs/prdouct_image1.jpg"
+                alt=""
+                width="200px"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Product Information -->
+        <div class="product-information">
+          <p class="name">PanOxyl Antimicrobial Hydrating</p>
+          <div class="stars">★★★★☆</div>
+          <p>stock left : <span class="Days">1200 piece</span></p>
+          <p class="description">
+            Gentle enough for everyday use and strong enough to combat the
+            peskiest pimples, this daily wash contains 4% Benzoyl peroxide to
+            clear acne at Lightni
+          </p>
+          <br />
+          <p class="price">125.00 LE</p>
+          <p>Quantity:</p>
+          <div class="quantity-selector">
+            <div class="quantity-control">
+              <button class="qty-minus">-</button>
+              <input type="number" value="1" min="1" class="qty-input" />
+              <button class="qty-plus">+</button>
+            </div>
+          </div>
+
+          <br />
+          <div class="product-actions">
+            <button class="add-to-cart-btn">ADD TO CART</button>
+            <button class="buy-now-btn">BUY NOW</button>
+          </div>
+          <br /><br /><br />
+          <hr />
+          <div class="more-info">
+            <p>brand: <a href="#" class="links">brand page</a></p>
+            <p>product code: <span class="code">id1-10</span></p>
+            <p>Tags: <a href="#" class="links">Tags</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lower Box -->
+      <div class="meta-data-container">
+        <!-- Sidebar -->
+        <div class="banner-sidebar">
+          <div class="card_feautre">
+            <img
+              class="service-icon"
+              src="./static/imgs/icon-policy1.jpg"
+              alt="Free Shipping"
+            />
+            <div class="feature-text">
+              <h4>Free Shipping</h4>
+              <p>on orders over 49.00LE</p>
+            </div>
+          </div>
+
+          <div class="card_feautre">
+            <img
+              class="service-icon"
+              src="./static/imgs/icon-policy2.jpg"
+              alt="7 Days Money Back"
+            />
+            <div class="feature-text">
+              <h4>7 Days Money Back</h4>
+              <p>30 days money back</p>
+            </div>
+          </div>
+
+          <div class="card_feautre">
+            <img
+              class="service-icon"
+              src="./static/imgs/icon-policy3.jpg"
+              alt="Online Support"
+            />
+            <div class="feature-text">
+              <h4>Online Support</h4>
+              <p>support online 24h on day</p>
+            </div>
+          </div>
+
+          <div class="card_feautre">
+            <img
+              class="service-icon"
+              src="./static/imgs/icon-policy4.jpg"
+              alt="Gift Promotion"
+            />
+            <div class="feature-text">
+              <h4>Gift Promotion</h4>
+              <p>on orders over $99.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="meta-data">
+          <div class="tabs-container">
+            <p class="tab active"><b>Description</b></p>
+            <p class="tab"><b>Reviews</b></p>
+            <p class="tab"><b>Shipping Methods</b></p>
+          </div>
+
+          <section class="tab-content product-description">
+            <!-- محتوى الوصف -->
+            <h3>Product Description</h3>
+            <p>
+              Enough for everyday use and strong enough to combat the peskiest
+              pimples, this daily wash contains 4% Benzoyl
+            </p>
+            <p>peroxide to clear acne at lightning speed.</p>
+            <br />
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+            </p>
+            <p>
+              unde omnis iste natus error sit voluptatem accusantium doloremque
+              laudantium.
+            </p>
+            <ul>
+              <li>Formula contains 4% Benzoyl peroxide</li>
+              <li>
+                Daily antimicrobial wash kills acne-causing bacteria on contact
+                and lifts dirt from pores for a fresher, clearer you.
+              </li>
+              <li>
+                pH balanced with 4 humectants and 3 emollients to increase
+                hydration
+              </li>
+              <li>Cleans and unclogs pores on face, chest and back</li>
+              <li>
+                Clears existing acne fast and helps prevent new blemishes from
+                forming
+              </li>
+            </ul>
+          </section>
+
+          <section class="tab-content reviews-content">
+            <!--  -->
+          </section>
+
+          <section class="tab-content shipping-content">
+            <h3>Returns Policy</h3>
+            <p>
+              You may return most new, unopened items within 30 days of delivery
+              for a full refund. We'll also pay the return shipping costs if the
+              return is a result of our error (you received an incorrect or
+              defective item, etc.). You should expect to receive your refund
+              within four weeks of giving your package to the return shipper,
+              however, in many cases you will receive a refund more quickly.
+              This time period includes the transit time for us to receive your
+              return from the shipper (5 to 10 business days), the time it takes
+              us to process your return once we receive it (3 to 5 business
+              days), and the time it takes your bank to process our refund
+              request (5 to 10 business days). If you need to return an item,
+              simply login to your account, view the order using the "Complete
+              Orders" link under the My Account menu and click the Return
+              Item(s) button. We'll notify you via e-mail of your refund once
+              we've received and processed the returned item.
+            </p>
+
+            <h3>Shipping</h3>
+            <p>
+              We can ship to virtually any address in the world. Note that there
+              are restrictions on some products, and some products cannot be
+              shipped to international destinations. When you place an order, we
+              will estimate shipping and delivery dates for you based on the
+              availability of your items and the shipping options you choose.
+              Depending on the shipping provider you choose, shipping date
+              estimates may appear on the shipping quotes page. Please also note
+              that the shipping rates for many items we sell are weight-based.
+              The weight of any such item can be found on its detail page. To
+              reflect the policies of the shipping companies we use, all weights
+              will be rounded up to the next full pound.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <div id="footer"></div>
+  </body>
+</html>

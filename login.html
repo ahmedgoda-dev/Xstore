@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XStore Login Page</title>
+    <link rel="stylesheet" href="./static/css/global.css" />
+    <link rel="stylesheet" href="./static/css/login.css" />
+    <script type="module" src="./static/js/utils/loadLayout.js"></script>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="container">
+      <div class="page-parent">
+        <div class="login">
+          <h1>Returning Customer</h1>
+          <div id="error-box" class="global-box"></div>
+          <form id="login-form">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" />
+            </div>
+            <div class="Forgotten-Password-div">
+              <a href="forgot-password.html" class="Forgotten-Password"
+                >Forgotten Password</a
+              >
+            </div>
+            <div class="btn">
+              <button class="button" type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="sign-up">
+          <h1>New customer</h1>
+          <h3>Register Account</h3>
+          <p>
+            By creating an account you will be able to shop faster, be up to
+            date on an order's status, and keep track of the orders you have
+            previously made.
+          </p>
+          <div class="btn">
+            <a class="button" href="signup.html">CONTINUE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script type="module" src="./static/js/login.js"></script>
+  </body>
+</html>
